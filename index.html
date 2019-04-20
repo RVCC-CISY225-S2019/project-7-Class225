@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower%7CLobster%7CPhilosopher5&CPoppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="print" href="print.css">
+
+
+</head>
+
+<body>
+    <!-- skip link -->
+    <a href="#main" class="skip">Skip to main</a>
+    <!-- start of header -->
+    <header id="header" class="header">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i id="symbol-toggle" class="fas fa-bars"></i>
+            </span>
+            <a href="#header" class="logo">
+                <div class="logo-container">
+                    <img class="logo" src="images/logo-1913689.svg" alt="Company Logo">
+                    <h1 class="page-title">Web Dev I</h1>
+                </div>
+            </a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#main" class="nav-links">Main</a>
+                </li>
+                <li>
+                    <a href="#about-me" class="nav-links">About Me</a>
+                </li>
+                <li>
+                    <a href="#pictures" class="nav-links">My Photos</a>
+                </li>
+                <li>
+                    <a href="#story" class="nav-links">A Story</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-links">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end of header -->
+    <!-- start of main content -->
+    <!--    why put tabindex of -1 on skiplink target -  https://axesslab.com/skip-links/ -->
+    <main id="main" tabindex="-1" class="main">
+        <!-- start of bio section -->
+        <section class="hero">
+            <div class="content">
+                <picture class="my-picture">
+                    <source media="(min-width: 1024px)" srcset="images/my_image-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/my_image-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/my_image-small.jpg">
+                    <img class="my-picture" src="images/my_image-xsmall.jpg" alt="This is a picture of me">
+                </picture>
+                <p class="my-name">Svetlana Kanel</p>
+                <p class="my-location">Basking Ridge, NJ</p>
+            </div>
+        </section>
+        <section id="about-me" class="about-me">
+            <div class="content">
+                <div class="about-content">
+                    <p class="iama">I like to...</p>
+                    <p class="my-info"><span class="feature">travel!</span></p>
+                    <p class="iama">My favorite way to travel is...</p>
+                    <p class="my-info">in a company of close <span class="feature">friends</span>.</p>
+                    <p class="iama">In my free time, I like to...</p>
+                    <p class="my-info">play my guitar, listen to music, go to the <span class="feature">mountains</span> or sail in the <span class="feature">sea</span> and meet new <span class="feature">people</span>.</p>
+                </div>
+            </div>
+        </section>
+        <!-- end of bio section -->
+        <div class="back-to-top">
+            <a href="#">Back to Top</a>
+        </div>
+        <!-- start of photo gallery -->
+        <section id="pictures" class="gallery">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/himalai-2014-1-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/himalai-2014-1-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/himalai-2014-1-small.jpg">
+                    <img src="images/himalai-2014-1-xsmall.jpg" alt="This is Langtang - Himalai">
+                </picture>
+                <figcaption>This is Langtang - Himalai</figcaption>
+            </figure>
+            <hr class="mobile-first">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/himalai-2014-top-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/himalai-2014-top-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/himalai-2014-top-small.jpg">
+                    <img src="images/himalai-2014-top-xsmall.jpg" alt="Himalai-top 4850">
+                </picture>
+                <figcaption>Himalai, top 4850m</figcaption>
+            </figure>
+            <hr class="mobile-first">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/snowboarding-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/snowboarding-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/snowboarding-small.jpg">
+                    <img src="images/snowboarding-xsmall.jpg">
+                </picture>
+                <figcaption>Snowboarding, New Hampshire, 2019</figcaption>
+            </figure>
+        </section>
+        <!-- end of photo gallery -->
+        <div class="back-to-top">
+            <a href="#">Back to Top</a>
+        </div>
+        <hr class="mobile-first">
+        <!-- start of Sherlock Holmes story -->
+        <article id="story" class="story">
+            <h2>
+                Story
+            </h2>
+            <div id="story_body" class="story-body">
+
+
+                <p><span class="letter">T</span>hey walked on, without knowing in what direction. There was too much to be thought, and felt, and said, for attention to any other objects. She soon learnt that they were indebted for their present good understanding to the efforts of his aunt, who did call on him in her return through London, and there relate her journey to Longbourn, its motive, and the substance of her conversation with Elizabeth; dwelling emphatically on every expression of the latter which, in her ladyship’s apprehension, peculiarly denoted her perverseness and assurance; in the belief that such a relation must assist her endeavours to obtain that promise from her nephew which she had refused to give. But, unluckily for her ladyship, its effect had been exactly contrariwise.</p>
+
+                <p>“It taught me to hope,” said he, “as I had scarcely ever allowed myself to hope before. I knew enough of your disposition to be certain that, had you been absolutely, irrevocably decided against me, you would have acknowledged it to Lady Catherine, frankly and openly.”</p>
+
+                <p>Elizabeth coloured and laughed as she replied, “Yes, you know enough of my frankness to believe me capable of that. After abusing you so abominably to your face, I could have no scruple in abusing you to all your relations.”</p>
+
+                <p>“What did you say of me, that I did not deserve? For, though your accusations were ill-founded, formed on mistaken premises, my behaviour to you at the time had merited the severest reproof. It was unpardonable. I cannot think of it without abhorrence.”</p>
+
+                <p>“We will not quarrel for the greater share of blame annexed to that evening,” said Elizabeth. “The conduct of neither, if strictly examined, will be irreproachable; but since then, we have both, I hope, improved in civility.”</p>
+
+                <p>“I cannot be so easily reconciled to myself. The recollection of what I then said, of my conduct, my manners, my expressions during the whole of it, is now, and has been many months, inexpressibly painful to me. Your reproof, so well applied, I shall never forget: ‘had you behaved in a more gentlemanlike manner.’ Those were your words. You know not, you can scarcely conceive, how they have tortured me;--though it was some time, I confess, before I was reasonable enough to allow their justice.”</p>
+
+                <p>“I was certainly very far from expecting them to make so strong an impression. I had not the smallest idea of their being ever felt in such a way.”</p>
+
+                <p>“I can easily believe it. You thought me then devoid of every proper feeling, I am sure you did. The turn of your countenance I shall never forget, as you said that I could not have addressed you in any possible way that would induce you to accept me.”</p>
+
+                <p>“Oh! do not repeat what I then said. These recollections will not do at all. I assure you that I have long been most heartily ashamed of it.”</p>
+
+                <p>Darcy mentioned his letter. “Did it,” said he, “did it soon make you think better of me? Did you, on reading it, give any credit to its contents?”</p>
+
+                <p>She explained what its effect on her had been, and how gradually all her former prejudices had been removed.</p>
+
+                <p>“I knew,” said he, “that what I wrote must give you pain, but it was necessary. I hope you have destroyed the letter. There was one part especially, the opening of it, which I should dread your having the power of reading again. I can remember some expressions which might justly make you hate me.”</p>
+
+                <p>“The letter shall certainly be burnt, if you believe it essential to the preservation of my regard; but, though we have both reason to think my opinions not entirely unalterable, they are not, I hope, quite so easily changed as that implies.”</p>
+
+                <p>“When I wrote that letter,” replied Darcy, “I believed myself perfectly calm and cool, but I am since convinced that it was written in a dreadful bitterness of spirit.”</p>
+
+                <p>“The letter, perhaps, began in bitterness, but it did not end so. The adieu is charity itself. But think no more of the letter. The feelings of the person who wrote, and the person who received it, are now so widely different from what they were then, that every unpleasant circumstance attending it ought to be forgotten. You must learn some of my philosophy. Think only of the past as its remembrance gives you pleasure.”</p>
+
+                <p>“I cannot give you credit for any philosophy of the kind. Your retrospections must be so totally void of reproach, that the contentment arising from them is not of philosophy, but, what is much better, of innocence. But with me, it is not so. Painful recollections will intrude which cannot, which ought not, to be repelled. I have been a selfish being all my life, in practice, though not in principle. As a child I was taught what was right, but I was not taught to correct my temper. I was given good principles, but left to follow them in pride and conceit. Unfortunately an only son (for many years an only child), I was spoilt by my parents, who, though good themselves (my father, particularly, all that was benevolent and amiable), allowed, encouraged, almost taught me to be selfish and overbearing; to care for none beyond my own family circle; to think meanly of all the rest of the world; to wish at least to think meanly of their sense and worth compared with my own. Such I was, from eight to eight and twenty; and such I might still have been but for you, dearest, loveliest Elizabeth! What do I not owe you! You taught me a lesson, hard indeed at first, but most advantageous. By you, I was properly humbled. I came to you without a doubt of my reception. You showed me how insufficient were all my pretensions to please a woman worthy of being pleased.”</p>
+
+                <p>“Had you then persuaded yourself that I should?”</p>
+
+                <p>“Indeed I had. What will you think of my vanity? I believed you to be wishing, expecting my addresses.”</p>
+
+                <p>“My manners must have been in fault, but not intentionally, I assure you. I never meant to deceive you, but my spirits might often lead me wrong. How you must have hated me after that evening?”</p>
+
+                <p>“Hate you! I was angry perhaps at first, but my anger soon began to take a proper direction.”</p>
+
+                <p>“I am almost afraid of asking what you thought of me, when we met at Pemberley. You blamed me for coming?”</p>
+
+                <p>“No indeed; I felt nothing but surprise.”</p>
+
+                <p>“Your surprise could not be greater than mine in being noticed by you. My conscience told me that I deserved no extraordinary politeness, and I confess that I did not expect to receive more than my due.”</p>
+
+                <p>“My object then,” replied Darcy, “was to show you, by every civility in my power, that I was not so mean as to resent the past; and I hoped to obtain your forgiveness, to lessen your ill opinion, by letting you see that your reproofs had been attended to. How soon any other wishes introduced themselves I can hardly tell, but I believe in about half an hour after I had seen you.”</p>
+            </div>
+        </article>
+        <!-- end of Sherlock Holmes story -->
+    </main>
+    <!-- end of main content -->
+    <div class="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
+    <hr class="mobile-first">
+    <!-- start of contact form -->
+    <section id="contact" class="form-container">
+        <h1>Get in Touch</h1>
+        <br class="mobile-first"><br class="mobile-first">
+        <form class="contact" method="POST" action="https://formspree.io/branles@yandex.ru">
+            <fieldset>
+                <legend>Please contact me</legend>
+                <label for="email">E-mail</label>
+                <br><br>
+                <input type="text" name="email" id="email">
+                <br><br>
+                <fieldset>
+                    <legend>I would like a reply</legend>
+                    <input type="radio" name="yes-no" value="Yes" checked> Yes<br>
+                    <input type="radio" name="yes-no" value="No"> No<br>
+                </fieldset>
+                <br>
+                <label for="message">Message</label>
+                <br><br>
+                <textarea name="message" id="message"></textarea>
+                <br><br>
+                <button type="submit"><br>Send Message<br><br></button>
+            </fieldset>
+        </form>
+
+    </section>
+    <!-- end of contact form -->
+    <!-- start of footer -->
+    <footer>
+        <br class="mobile-first"><br class="mobile-first">
+        Copyright &copy; 2019 Svetlana Kanel
+    </footer>
+    <div class="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
+    <!-- end of footer -->
+    <br class="mobile-first"><br class="mobile-first">
+    <!-- start of the sign of walidation -->
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+        </a>
+    </p>
+    <!-- end of the sign of walidation -->
+    <!-- start of javascript for nav toggle -->
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+        let symbolToggle = document.getElementById('symbol-toggle');
+
+
+        navBarToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            if (symbolToggle.classList.contains('fa-bars')) {
+                symbolToggle.classList.remove('fa-bars');
+                symbolToggle.classList.add('fa-times');
+            } else {
+                symbolToggle.classList.remove('fa-times');
+                symbolToggle.classList.add('fa-bars');
+            }
+        });
+
+    </script>
+    <!-- end of javascript for nav toggle -->
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+body {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.2em;
+
+}
+
+.navbar {
+    background-color: #3b8509;
+}
+
+.back-to-top > a {
+    color: #3b8509;
+}
+
+.back-to-top > a:hover,
+.back-to-top > a:focus {
+    outline: none;
+    background: #3b8509;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+}
+
+.my-name,
+.my-location {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #3b8509;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.my-name {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.my-info {
+    text-align: right;
+}
+
+.feature {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #3b8509;
+    font-weight: 600;
+}
+
+article h2 {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #3b8509;
+    text-align: center;
+}
+
+.letter {
+    float: left;
+    font-size: 400%;
+    margin-right: 5px;
+    color: #3b8509;
+}
+
+.form-container {
+    background: #b0ff7f;
+}
+
+legend {
+    font-size: 1.2em;
+}
+
+input,
+textarea {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1em;
+    min-width: 100%;
+}
+
+input[type="radio"] {
+    min-width: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background: #3b8509;
+    color: #ffffff;
+}
+
+/*  grids */
+
+main {
+    display: grid;
+}
+
+/* hero content */
+
+.content {
+    display: grid;
+}
+
+/* about content */
+
+.about-content {
+    display: grid;
+}
+
+/*  gallery */
+
+.gallery {
+    display: grid;
+}
+
+figure {
+    display: grid;
+}
+
+/*  article */
+
+article {
+    display: grid;
+}
+
+/* form container */
+.form-container {
+    display: grid;
+}
+
+/* footer */
+
+footer {
+    display: grid;
+}
+
+/*  layout */
+
+/*   mobile is the default layout*/
+
+/* tablet layout >=48rem (768px) */
+
+@media screen and (min-width: 48rem) {
+
+    /*      hero content */
+    .content {
+        grid-template-columns: 1fr 40ch 1fr;
+    }
+
+    .content picture,
+    .content p,
+    .about-content {
+        grid-column: 2/3;
+
+    }
+
+    /*	about content */
+
+
+    /*	gallery */
+
+    figure {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    figcaption {
+        margin-left: 1rem;
+    }
+
+    /*	article */
+    article,
+    .form-container {
+        grid-template-columns: 1fr 48ch 1fr;
+    }
+
+    .story h1,
+    .story h2,
+    .story-body,
+    form,
+    .form-container h1 {
+        grid-column: 2/3;
+    }
+
+    /*	form */
+
+}
+
+/* wide screen layout >=64rem (1024px) */
+
+@media screen and (min-width: 64rem) {
+    .mobile-first {
+        display: none;
+    }
+
+    /*      hero content */
+
+    /*	about content */
+
+    /*	gallery */
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery h1 {
+        grid-column: 1/4;
+    }
+
+    figure {
+        grid-column: auto;
+    }
+
+    figure {
+        grid-template-columns: 1fr;
+    }
+
+    /*	article */
+
+    /*	form */
+
+}
+
+
